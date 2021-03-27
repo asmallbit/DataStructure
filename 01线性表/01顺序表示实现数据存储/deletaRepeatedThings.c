@@ -9,8 +9,8 @@ int deleteRepeatedThings(List list, DataType x){
     {
         if(list->num[i]==x){
             counter++;
-            if(counter>1){
-                //删除元素
+            if(counter>0){
+                //删除所有值为x的元素
                 for(j=i+1;j<list->n;j++){
                     list->num[j-1] = list->num[j];
                 }
