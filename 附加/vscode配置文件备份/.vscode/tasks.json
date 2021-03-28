@@ -7,6 +7,8 @@
             "args": [    // 编译器执行时的参数，跟手动编译时输入的内容基本一致，主要是多了-g参数，以加入调试信息
                 "-g",
                 "${file}",
+                //链接C++标准库STL
+                //"-lstdc++",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
