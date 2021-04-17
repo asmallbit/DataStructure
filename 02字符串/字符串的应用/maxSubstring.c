@@ -126,6 +126,16 @@ PFinalResult getMaxLengthStr(char *p1, char *p2, int l1, int l2, PFinalResult p)
                     lengthc->next = creatNullList();
                     lengthc = lengthc->next;
                     lengthc->index = temp2;
+                    if (result == 1)
+                    {
+                        indexc->data = i - 1;
+                        indexc->index++;
+                        temp1 = indexc->index;
+                        indexc->next = creatNullList();
+                        indexc = indexc->next;
+                        indexc->index = temp1;
+                        tempj = j;
+                    }
                     result = 0;
                 }
                 if (result == 1)
