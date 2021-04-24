@@ -174,6 +174,19 @@ void printBinTree(PBinTree p)
     }
 }
 
+//计算二叉树高度    递归    调用此函数前length应初始化为0
+int getHeight(PBinTree p){
+    //边界条件
+    if(p==NULL){
+        return -1;
+    }
+    //递归体
+    int left, right;
+    left = getHeight(p->llink);
+    right = getHeight(p->rlink);
+    return max(left, right) + 1;
+}
+
 //读入字符
 char *getString()
 {
