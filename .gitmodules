@@ -1,0 +1,6 @@
+[submodule "99实践课/Contact"]
+	path = 99实践课/Contact
+	url = https://github.com/asmallbit/Contact.git
+[submodule "99实践课/LibraryManagement"]
+	path = 99实践课/LibraryManagement
+	url = https://github.com/asmallbit/LibraryManagement.git
